@@ -1,0 +1,377 @@
+/*
+Theme name : Gyan
+Authore Name : Gyan
+version:  1.0
+
+
+Table of Content
+- - - - - - - - - -
+1. common css
+2. Nav section
+3. Bannner section
+4. Support section
+5. About section
+6. Courses section
+7. Our Events section
+8. Our Testimonial and FAQ section
+9. Our Teacher section
+10. Our Bolg section
+11. Contact section
+
+
+
+*/
+
+/* common css start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3.h4.h5.h6,p,span,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+
+a,a:hover{
+    text-decoration: none;
+ }
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Arimo', sans-serif;
+}
+/* //common css end */
+
+/* Header css Start*/
+#header{
+    background-color: #2d3e50;
+	line-height: 40px;
+	height: 40px;
+}
+#header .header_left,
+#header .header_right{
+    width: 50%;
+}
+#header .header_left ul li{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    color: #fff;
+}
+#header .header_right ul li a,
+#header .header_right ul li{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    color: #fff;
+    text-align: right;
+}
+
+#header .header_right ul li:hover a{
+    color: #fbaa33;
+}
+/* //Header css End*/
+
+/* nav css Start*/
+nav#idmy_nav{
+    background-color: #fff;
+    font-family: 'Arimo';
+}
+#my_nav.menu_animate{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    animation: smooth .4s;
+ }
+ @keyframes smooth {
+    0%{
+       top:-50px;
+    }
+    100%{
+       top:0px;
+    }
+ }
+nav .navbar-nav ul li{
+    padding: 8 30px;
+}
+nav .navbar-nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+nav .navbar-nav ul li a:hover{
+    color: #fbaa33;
+
+}
+.get_start{
+    color: #fff;
+    padding: 10px 18px;
+    background-color: #fbaa33;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: all .3s linear;
+}
+.get_start:hover{
+    background-color: #2d3e50;
+    color: #fff;
+}
+
+/* //nav css End*/
+
+/* BAnner css Start*/
+
+#banner .banner_item{
+    height: 670px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    font-family: 'Arimo';
+    color: #fff;
+    z-index: 1;
+
+}
+#banner .banner_item::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#banner .banner_content {
+	font-family: 'Arimo';
+	color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24x;
+}
+#banner .banner_content h1 {
+	font-weight: 700;
+	font-size: 52px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+#banner .banner_content h1 span {
+	font-weight: 400;
+	font-size: 40px;
+	display: block;
+}
+#banner .banner_content p {
+	font-weight: 400;
+	font-size: 14px;
+    padding: 20px 0; 
+}
+.banner_content .take_tour {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	padding: 13px 22px;
+	border-radius: 5px;
+	margin-right: 20px;
+	background: #2d3e50;
+	transition: all linear .5s;
+}
+
+
+.banner_content .take_tour:hover {
+	background: #fbaa33;
+}
+
+.banner_content .start_course{
+    	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	padding: 13px 22px;
+	border-radius: 5px;
+	margin-right: 20px;
+	transition: all linear .5s;
+    background: #fbaa33;
+}
+.banner_content .start_course:hover {
+    background:  #2d3e50;
+}
+
+/* //Banner css End*/
+
+/* Support css Satrt*/
+
+support {
+	margin-top: -110px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.support .online {
+	background: #f5f5f5;
+	border: 1px solid #dddddd;
+	border-right: 2px solid #dddddd;
+	padding-bottom: 30px;
+	text-align: center;
+	transition: all linear .5s;
+
+}
+.support .online:hover{
+    box-shadow: 0 7px 50px rgba(0, 0, 0, 0.15);
+}
+.support .online img {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.support .online .text-center h4 {
+	font-weight: 400;
+	font-size: 24px;
+	color: #444444;
+	padding-bottom: 10px;
+}
+
+.support .online .text-center a {
+	font-weight: 400;
+	font-size: 16px;
+	color: #999999;
+	margin-bottom: 30px;
+	transition: all linear .5s;
+	cursor: pointer;
+}
+
+.support .online .text-center a i {
+	padding-left: 5px;
+}
+
+.online .text-center a:hover {
+	color: #fbaa33;
+}
+
+
+/* //Support css End*/
+
+/* About css Start*/
+
+#about{
+    padding: 100px 0;
+    line-height: 24px;
+}
+.about_img .about_item{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.about_img .bottom_arow{
+    text-align: right;
+}
+.about_item p{
+    font-size: 14px;
+	color: #444444;
+	margin-bottom: 20px;
+}
+.about_item .about_batton{
+    margin-top: 30px;
+}
+.about_item .about_batton a{
+	font-size: 20px;
+	padding: 12px 18px;
+	background: #2d3e50;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 20px;
+    transition: all .4s linear;
+}
+.about_item .about_batton a:hover{
+    background: #fbaa33;
+}
+#about .about_slider{
+    position: relative;
+}
+#about .about_slider .slider_dots{
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -50%);
+}
+#about .about_slider .slider_dots li{
+    line-height: 0;
+    display: inline-block;
+    margin: 0 2px;
+}
+#about .about_slider .slider_dots li button{
+    border: none;
+    background: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+#about .about_slider .slider_dots li.slick-active button{
+    background-color: #fbaa33;
+    border: 2px solid transparent;
+}
+
+/* //About css End*/
+
+
+/* Counter css Start*/
+
+
+#counter_part {
+	background: url(../img/counterPartImage.png);
+	background-position: center !important;
+	background-size: cover !important;
+	position: relative;
+	z-index: 1;
+}
+
+.counter_item {
+	position: relative;
+	margin: 41px 0px;
+}
+
+.counter_item h3 {
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: 'Arimo';
+	padding-bottom: 8px;
+}
+
+.counter_item h5 {
+	font-family: 'Arimo';
+	font-weight: 400;
+	font-size: 24px;
+	color: #f1f1f1;
+	padding-bottom: 14px;
+}
+
+/* //Counter css End*/
+
+/* Counter Slider css Sart*/
+
+
+
+/* //Counter Slider css End*/
+
+
+
+
+
+
+
